@@ -1,0 +1,199 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap');
+:root
+{
+    --main-color:rgb(21, 136, 190);
+    --light-color:#f0f3f2;
+    --shadow: rgba(145,158,171,.2) 0px 2px 4px -1px,rgba(145,158,171,.14) 0px 4px 5px 0px,rgba(145,158,171,.12) 0px 1px 10px 0px;
+    --font-family:'Encode Sans Expanded', sans-serif;
+    --rating-color:#ffc908;
+}
+.active{
+    background-color: var(--main-color) !important;
+    color: white !important;
+}
+.active:hover{
+    color: white !important;
+}
+body{
+    font-family: var(--font-family) !important;
+    background-color: rgb(236, 235, 235) !important;
+    
+}
+.rating-color
+{
+    color: var(--rating-color);
+}
+.cursor-pointer
+{
+    cursor: pointer;
+}
+a , a:hover{
+    color: black !important;
+    text-decoration: none !important;
+}
+.product:hover
+{
+    box-shadow: var(--shadow);
+    border: solid 1px var(--main-color);
+}
+.product .btn 
+{
+    transition: transform 0.5s , opacity 0.5s;
+    transform: translateY(30%);
+    opacity: 0;
+}
+.product:hover .btn 
+{
+    opacity: 1;
+    transform: translateY(0%);
+
+}
+.product .fa-heart{
+    transform: translateY(30%);
+    opacity: 0;
+    
+    transition: all .5s;
+}
+
+.product:hover .fa-heart{
+    transform: translateY(0%);
+    opacity: 1;
+
+}
+.font-sm
+{
+    font-size: 14px;
+}
+.text-main
+{
+    color: var(--main-color) !important;
+}
+.bg-main
+{
+    background-color: var(--main-color) !important;
+}
+.bg-main-light 
+{
+    background-color: var(--light-color) !important;
+}
+
+
+
+/* loader */
+.loader {
+    width: 60px;
+    height: 60px;
+   }
+   
+   .loader::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border-top: 2px solid var(--main-color);
+    border-right: 2px solid transparent;
+    animation: spinner8217 0.8s linear infinite;
+   }
+   
+   @keyframes spinner8217 {
+    to {
+     transform: rotate(360deg);
+    }
+   }
+/* log out btn */
+.Btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 29px;
+    height: 29px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition-duration: .3s;
+    background-color: var(--main-color)
+  }
+  
+  /* plus sign */
+  .sign {
+    width: 100%;
+    transition-duration: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .sign svg {
+    width: 17px;
+  }
+  
+  .sign svg path {
+    fill: white;
+  }
+  /* text */
+  .text {
+    position: absolute;
+    right: 0%;
+    width: 0%;
+    opacity: 0;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition-duration: .3s;
+  }
+  /* hover effect on button width */
+  .Btn:hover {
+    width: 125px;
+    border-radius: 40px;
+    transition-duration: .3s;
+  }
+  
+  .Btn:hover .sign {
+    width: 30%;
+    transition-duration: .3s;
+    padding-left: 20px;
+  }
+  /* hover effect button's text */
+  .Btn:hover .text {
+    opacity: 1;
+    width: 70%;
+    transition-duration: .3s;
+    padding-right: 10px;
+  }
+  /* button click effect*/
+  .Btn:active {
+    transform: translate(2px ,2px);
+  }
+
+
+.productDetail{
+    margin:48px 0px !important ;
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    .categoryInPhone{
+        slidesToShow: 2;
+    dots:true;
+    margin-bottom: 20px !important;
+
+    }
+    .container{
+        margin:0px 0px !important ;
+    }
+    .socialIc{
+  display: none !important;
+    }
+    
+}
+
+
+
