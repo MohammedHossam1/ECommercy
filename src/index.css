@@ -175,7 +175,9 @@ a , a:hover{
     margin:48px 0px !important ;
 }
 
-
+.socialIc{
+display: flex;
+}
 
 
 
@@ -192,6 +194,12 @@ a , a:hover{
     .socialIc{
   display: none !important;
     }
+    .twoPicHide{
+        display: none;
+    }
+    .product {
+      }
+    
     
 }
 

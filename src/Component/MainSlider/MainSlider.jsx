@@ -29,7 +29,7 @@ export default function MainSlider() {
           </Slider>
 
         </div>
-        <div className="col-md-3 " >
+        <div className="col-md-3 twoPicHide" >
             <img height={200} className='w-100' src={blog1} alt="" />
             <img height={200} src={blog2} className='w-100' alt="" />
         </div>

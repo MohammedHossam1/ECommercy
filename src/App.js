@@ -10,7 +10,7 @@ import ProductDetails from './Component/ProductDetails/ProductDetails'
 import Address from './Component/Address/Address'
 import Register from './Component/Register/Register'
 import NotFound from './Component/NotFound/Notfound'
-import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import { RouterProvider, createBrowserRouter, createHashRouter } from 'react-router-dom'
 import UserContextProvider, { userContext } from './Context/UserContext'
 import ProtectedRoute from './Component/ProtectedRoute/ProtectedRoute'
 import ForgetPassword from './Component/ForgetPassword/ForgetPassword'
@@ -23,7 +23,8 @@ import ResetPassword from './Component/ForgetPassword/ResetPassword'
 import VerifyPassword from './Component/ForgetPassword/VerifyPassword'
 import CategoryContextProvider from './Context/CategoryContext'
 import WishList from './Component/WishList/WishList'
-let routes = createBrowserRouter([
+
+let routes = createHashRouter([
   {
     path: '/', element: <Layout />, children: [
 

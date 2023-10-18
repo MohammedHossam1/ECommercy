@@ -60,10 +60,10 @@ export default function FeaturedProducts() {
         <div className="loader"></div>
       ) : (
         <div>
-          <div className="container pb-5 pt-2">
+          <div className="container pb-5 pt-5">
             <div className="row g-2">
               {data?.data.data.map((product) => (
-                <div key={product.id} className="col-sm-6  col-md-4 col-lg-2 ">
+                <div key={product.id} className="col-sm-6 col-md-4 col-lg-2 ">
                   <div className="product bg-white shadow-sm rounded-2 p-1 my-1">
                     <Link to={`/productDetails/${product.id}`}>
                       <img

@@ -30,7 +30,7 @@ export default function NavBar() {
   return (
     <nav className="navbar shadow-sm navbar-expand-lg bg-body-tertiary">
       <div className="container">
-        <Link className="navbar-brand" to="/home">
+        <Link className="navbar-brand" to="/">
           <img src={logo} className="w-100" alt="fresh market logo" />
         </Link>
         <button
@@ -107,7 +107,7 @@ export default function NavBar() {
           )}
 
           <ul className="navbar-nav  ms-auto mb-2 mb-lg-0">
-            <div className="socialIc  d-flex">
+            <div className="socialIc ">
             <Link className="nav-link" to="">
               <i className="fab fa-facebook-f"></i>
             </Link>
